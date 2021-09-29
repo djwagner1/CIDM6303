@@ -13,11 +13,14 @@ print("End Chapter 4.1 Defining Functions\n")
 # which is why we change the name to greet2().
 
 def greet2(first_name, last_name):
-    print("Hi {first_name} {last_name}")
-    print("Welcome aboard")
+    print(f"Hi {first_name} {last_name}")
+    print("Welcome Aboard")
 
-greet2("Ada", "Lovelace")
-print("*** End of Chapter 4.2 Arguments\n")
+greet2("Ada", "Lovelace") #Google who Ada Lovelace was
+print("***End Chapter 4.2 Arguments\n")
+
+
+
 
 
 
