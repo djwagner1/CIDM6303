@@ -37,3 +37,29 @@ def increment_default(number, by=1):
 
 print(increment_default(2,5))
 print("***End of Chpater 4.5 Default Arguments\n")
+
+#Chapter 4.6 Xargs
+def mulitply(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+    return total
+
+print(mulitply(2,3,4,5))
+print(mulitply(55,87))
+print(mulitply(100,98,77,4,-5,72,0.5))
+print("***End Chapter 4.6 Xargs\n")
+
+#Chapter 4.7 xxargs
+def save_user(**user):
+    print(user["name"])
+
+save_user(id=1,name="John", age=22)
+print("***End of Chapter 4.7 xxargs\n")
+
+#Chapter 4.9 Debugging
+#Watch the video and learn how to debug. Nothing to code.
+
+#Chapters 4.10 & 4.11 VSCode Coding Tricks
+#Watch the video and learn how to debug. Nothing to code.
+
