@@ -2,30 +2,22 @@
 # create a function to calculate various taxes for an employee
 # see instructions for details
 
- #       def calc_payroll_tax(gross_pay):
-  #  return(calc_payroll_tax(2000))
 
-#def calc_payroll_tax(gross_pay):
-#    print(f"Gross Pay is {gross_pay:.f2}")
 def calc_payroll_tax(gross_pay):
-    return gross_pay
-#print(calc_payroll_tax())
-    #gross_pay = (float(input("Please enter income: ", )))
-
-    medicare = (gross_pay * .0145)
+    print(f"Gross pay is $: {gross_pay:.2f}")
+    medicare = (gross_pay * 0.0145)
+    print(f"Medicare is $: {medicare:.2f}")
     futa = (gross_pay * .006)
+    print(f"FUTA is: $ {futa:.2f}")
     ss_tax_employer = (gross_pay * .062)
+    print(f"Social Security tax paid by employer: ${ss_tax_employer:.2f}")
     ss_tax_employee = (gross_pay * .062)
+    print(f"Social Security tax paid by employer: ${ss_tax_employee:.2f}")
     total_tax = (medicare + futa + ss_tax_employee)
+    print(f"Total Payroll tax paid by employee: $ {total_tax}")
     net_pay = (gross_pay - total_tax)
+    print(f"Net Pay: $ {net_pay}")
+    print("")
 
-print(gross_pay)
 
 
-print(f"Gross pay = $ {gross_pay:.2f}")
-print(f"Medicare = $ {medicare:.2f}")
-print(f"Employee SS = ${ss_tax_employee:.2f}")
-print(f"FUTA = ${futa:.2f}")
-print(f" Total Tax = ${total_tax:.2f}")
-print(f"Net Pay = ${net_pay:.2f}")
-print("-"*30)
