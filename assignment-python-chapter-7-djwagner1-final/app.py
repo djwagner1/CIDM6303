@@ -94,7 +94,7 @@ class Point6:
         self.x =x
         self.y =y
 
-    def __str__(self,x,y):
+    def __str__(self):
         return f"({self.x},{self.y})"
 
     def draw(self):
@@ -126,7 +126,7 @@ class Fish(Animal):
     def walk(self):
         print("swim")
 
-m = Mammal(Animal)
+m = Mammal()
 m.eat()
 print(m.age)
 
