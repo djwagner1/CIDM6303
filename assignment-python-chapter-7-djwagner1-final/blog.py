@@ -27,8 +27,8 @@ blog4.post
 blog5.post
 
 # set some likes on certain blogs
-blog1.likes
-blog3.likes
+blog1.likes = 2
+blog3.likes = 3
 
 print(blog1.likes)
 print(blog2.likes)
